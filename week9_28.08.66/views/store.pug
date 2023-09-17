@@ -1,0 +1,21 @@
+extends layouts/main-layout.pug
+
+block styles
+
+block main
+  main
+      if prods.length > 0
+          .grid 
+              each product in prods
+                  article.card.product__item
+                      header.card__header
+                          h1.product__title #{product.title}
+                      .card__img
+                          img(src="https://sebastianraschka.com/images/books/2023-ml-qai-cover.jpg" , alt="A book" ,width = "400")
+                      .card__content
+                          h2.product__price 799฿
+                          p.product__description A very interesting book for Computer Science
+                      .card__actions
+                          button.btn Add to card
+
+
