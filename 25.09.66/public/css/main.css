@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500;600&family=Prompt:ital,wght@0,100;0,300;0,600;0,800;1,100;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-family: "Prompt", sans-serif;
+}
+
+main {
+  padding: 1rem;
+  margin: auto;
+}
+
+.main-header {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #f3c230;
+  padding: 0 1.5rem;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.main-header__nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-header__item {
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.main-header__item a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a:active {
+  color: #d93d30;
+}
+
+.btn {
+  font: inherit;
+  border: 1px solid #63aebf;
+  background: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background: #63aebf;
+  border-radius: #fff solid 3px;
+  color: #fff;
+}
+
+.active {
+  color: #d93d30 !important;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin: 20px 0;
+}
+
+.card__header,
+.card__content {
+  padding: 1rem;
+}
+
+.card__header h1,
+.card__content h1,
+.card__content h2,
+.card__content p {
+  margin: 0;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__image img {
+  width: 100%;
+}
+
+.card__actions {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card__actions button,
+.card__action a {
+  margin: 0 0.25rem;
+}
